@@ -25,13 +25,9 @@ public class IsogramEx {
 	}
 
 	private static Boolean checkIsIsogram(String inputString) {
-		String[] arr = inputString.split("");
+		String[] arr = inputString.split(""); //toCharArray
 		Set<String> set = new HashSet<String>(Arrays.asList(arr));
-		if (inputString.length() == set.size()) {
-			return true;
-		} else {
-			return false;
-		}
+		return inputString.length() == set.size();
 	}
 
 	private static String userInput() {
