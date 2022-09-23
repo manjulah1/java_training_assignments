@@ -5,6 +5,7 @@ public class Employee {
 	private String EmpName;
 	private String EmpDept;
 	private Integer EmpSalary;
+
 	public Employee(Integer empId, String empName, String empDept, Integer empSal) {
 		super();
 		EmpId = empId;
@@ -12,30 +13,28 @@ public class Employee {
 		EmpDept = empDept;
 		EmpSalary = empSal;
 	}
+
 	public Integer getEmpId() {
 		return EmpId;
 	}
-	public void setEmpId(Integer empId) {
-		EmpId = empId;
-	}
+
 	public String getEmpName() {
 		return EmpName;
 	}
-	public void setEmpName(String empName) {
-		EmpName = empName;
-	}
+
 	public String getEmpDept() {
 		return EmpDept;
 	}
-	public void setEmpDept(String empDept) {
-		EmpDept = empDept;
-	}
+
 	public Integer getEmpSalary() {
 		return EmpSalary;
 	}
-	public void setEmpSalary(Integer empSalary) {
-		EmpSalary = empSalary;
+
+	@Override
+	public String toString() {
+		return java.text.MessageFormat.format(
+				"Employee ID: {0} {4} Employee Name: {1} {4} Employee Department: {2} {4} Employee Salary: {3} {4}",
+				this.getEmpId(), this.getEmpName(), this.getEmpDept(), this.getEmpSalary(), System.lineSeparator());
 	}
-	
-	
+
 }
