@@ -1,1 +1,0 @@
-# java_training_assignments
