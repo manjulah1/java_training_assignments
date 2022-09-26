@@ -1,40 +1,49 @@
 package com.cognologix.entity;
 
 public class Candidate {
-	private Integer CandidateId;
-	private String CandidateName;
-	private String Constituency;
-	private Integer Votes;
+	private Integer candidateId;
+	private String candidateName;
+	private String constituency;
+	private Integer votes;
+	
+	
 	public Candidate(Integer candidateId, String candidateName, String constituency, Integer votes) {
 		super();
-		CandidateId = candidateId;
-		CandidateName = candidateName;
-		Constituency = constituency;
-		Votes = votes;
+		this.candidateId = candidateId;
+		this.candidateName = candidateName;
+		this.constituency = constituency;
+		this.votes = votes;
 	}
+	
 	public Integer getCandidateId() {
-		return CandidateId;
+		return candidateId;
 	}
 	public void setCandidateId(Integer candidateId) {
-		CandidateId = candidateId;
+		this.candidateId = candidateId;
 	}
 	public String getCandidateName() {
-		return CandidateName;
+		return candidateName;
 	}
 	public void setCandidateName(String candidateName) {
-		CandidateName = candidateName;
+		this.candidateName = candidateName;
 	}
 	public String getConstituency() {
-		return Constituency;
+		return constituency;
 	}
+	@Override
+	public String toString() {
+		return "Candidate [candidateId=" + candidateId + ", candidateName=" + candidateName + ", constituency="
+				+ constituency + ", votes=" + votes + "]";
+	}
+
 	public void setConstituency(String constituency) {
-		Constituency = constituency;
+		this.constituency = constituency;
 	}
 	public Integer getVotes() {
-		return Votes;
+		return votes;
 	}
 	public void setVotes(Integer votes) {
-		Votes = votes;
+		this.votes = votes;
 	}
 	
 	
