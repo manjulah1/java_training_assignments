@@ -5,16 +5,15 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.stream.Stream;
 
 public class FileReaderController {
 
-	public Object readFileInputType() throws Exception {
-		Object dataType = null;
+	public Object readFileInputType() {
 		File file = new File(
 				"/home/manjula/eclipse-workspace/Collection_Question_10/src/com/cognologix/model/inputData.txt");
-		BufferedReader bufferReader = new BufferedReader(new FileReader(file));
+		try(FileReader fr = new FileReader(file)) {
+		Object dataType = null;
+		BufferedReader bufferReader = new BufferedReader(fr);
 		String str = null;
 		str = bufferReader.readLine();
 		if (str.matches("\\d+")) {
@@ -25,6 +24,15 @@ public class FileReaderController {
 			dataType = "String";
 		}
 		return dataType;
+		} catch(NullPointerException nullPointerException) {
+			throw new RuntimeException(nullPointerException);
+		} catch (FileNotFoundException fileNotFoundException) {
+			throw new RuntimeException(fileNotFoundException);
+		} catch (IOException ioException) {
+			throw new RuntimeException(ioException);
+		} catch (Exception ex) {
+			throw new RuntimeException(ex);
+		}
 	}
 
 	public DoublyLinkedListEx<? extends Object> readFileInputData() throws Exception {
@@ -40,13 +48,6 @@ public class FileReaderController {
 		} else {
 			dll = new DoublyLinkedListEx<String>();
 		}
-		
-		File file = new File(
-				"/home/manjula/eclipse-workspace/Collection_Question_10/src/com/cognologix/model/inputData.txt");
-		BufferedReader bufferReader = new BufferedReader(new FileReader(file));
-		
-		Stream<Object> stream = Stream.of(dataType.getClass().getSimpleName());
-		
 		
 		return dll;
 	}

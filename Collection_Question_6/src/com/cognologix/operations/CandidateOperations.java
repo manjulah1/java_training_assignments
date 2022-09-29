@@ -18,7 +18,7 @@ public class CandidateOperations {
 	}
 
 	public Map<String, Integer> calcIdForHighestVotes(List<String> constituencyList) {
-		Map<String, Integer> map = new HashMap<String, Integer>();
+		Map<String, Integer> map = new HashMap<>();
 		Integer highest = 0;
 		Candidate highestVotedCandidate = null;
 		for (String constituency : constituencyList) {
@@ -37,7 +37,7 @@ public class CandidateOperations {
 	}
 
 	public List<String> getConstitutiencies() {
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		for (Candidate candidate : candidateList) {
 			if (list.contains(candidate.getConstituency()) == false) {
 				list.add(candidate.getConstituency());

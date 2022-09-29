@@ -8,8 +8,8 @@ import com.cognologix.controllers.SublistOperation;
 public class ListSubset {
 
 	public static void main(String[] args) {
-		List<Integer> list1 = new ArrayList<Integer>();
-		List<Integer> list2 = new ArrayList<Integer>();
+		List<Integer> list1 = new ArrayList<>();
+		List<Integer> list2 = new ArrayList<>();
 		int[] l1 = new int[] { 6, 7, 8, 9 };
 		int[] l2 = new int[] { 1, 2, 3, 4 };
 		

@@ -8,7 +8,7 @@ import java.util.Set;
 public class IsogramOperations {
 	public Boolean checkIsIsogram(String inputString) {
 		String[] arr = inputString.split("");
-		Set<String> set = new HashSet<String>(Arrays.asList(arr));
+		Set<String> set = new HashSet<>(Arrays.asList(arr));
 		return inputString.length() == set.size();
 	}
 

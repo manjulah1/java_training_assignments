@@ -8,7 +8,6 @@ public class Candidate {
 	
 	
 	public Candidate(Integer candidateId, String candidateName, String constituency, Integer votes) {
-		super();
 		this.candidateId = candidateId;
 		this.candidateName = candidateName;
 		this.constituency = constituency;

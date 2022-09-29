@@ -19,7 +19,7 @@ public class EmployeeOperations {
 	public Map<String, Integer> calcHighestSalary(final List<String> deptartmentList) {
 		Integer highestSalary = 0;
 		Employee highestPaidEmployee = null;
-		Map<String, Integer> salaryMap = new HashMap<String, Integer>();
+		Map<String, Integer> salaryMap = new HashMap<>();
 		try {
 			for (String deptartment : deptartmentList) {
 				for (Employee employee : this.employeeList) {
