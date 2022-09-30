@@ -1,6 +1,7 @@
 package corejava.collection.assignmentset2.question4.solution;
 
 import java.util.List;
+
 import corejava.collection.assignmentset2.question4.model.Student;
 
 public class AverageMarksCalculator {
@@ -25,7 +26,7 @@ public class AverageMarksCalculator {
 	public Double getAverageMarksForTheStudent(Integer id) {
 		Integer sum = 0;
 		int count = (int) studentList.stream().filter(student -> student.getStudentId().equals(id)).count();
-		sum = (Integer) studentList.stream().filter(student -> student.getStudentId().equals(id))
+		sum = studentList.stream().filter(student -> student.getStudentId().equals(id))
 				.mapToInt(student -> student.getStudentMarks()).sum();
 		return (double) (sum / count);
 	}

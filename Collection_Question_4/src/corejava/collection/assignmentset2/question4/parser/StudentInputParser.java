@@ -22,8 +22,8 @@ public class StudentInputParser {
 
 	public List<Student> parseCSVFile(String filePath) {
 		List<Student> list = new ArrayList<>();
-		try(FileReader fr = new FileReader(filePath)) {
-			BufferedReader bufferedReader = new BufferedReader(fr);
+		try(FileReader reader = new FileReader(filePath)) {
+			BufferedReader bufferedReader = new BufferedReader(reader);
 			String line;
 			while ((line = bufferedReader.readLine()) != null) {
 

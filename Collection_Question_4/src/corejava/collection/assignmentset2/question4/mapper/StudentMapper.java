@@ -9,7 +9,7 @@ public class StudentMapper {
 		Integer studentId = Integer.parseInt(arrData[0]);
 		String studentSubject = arrData[1];
 		Integer studentMarks = Integer.parseInt(arrData[2]);
-		
+
 		Student student = new Student(studentId, studentSubject, studentMarks);
 		return student;
 		} catch(NumberFormatException numberFormatException) {
