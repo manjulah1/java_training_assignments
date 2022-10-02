@@ -1,4 +1,58 @@
-/bin/**
-.settings
-.idea
-.project
+/.metadata/
+# Java related
+target/**
+*.jar
+*.war
+*.ear
+*.class
+
+# eclipse specific
+*.pydevproject
+.project*
+.metadata/*
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath*
+.settings/*
+.loadpath
+
+#specific files and folders
+
+JavaTraining/*
+PracticeProj/*
+practiceProj/*
+CollectionAssignmentPart2/*
+Collection_Question_1/*
+Collection_Part3_Question1/*
+Collection_Part3_Question2/*
+ClassImplementations/*
+/[Cc]ollection_Question_5/*
+/Collection_Question_5/.settings/*
+!/[Cc]ollection_Question_5/src
+/[Cc]ollection_Question_6/*
+!/[Cc]ollection_Question_6/src
+/[Cc]ollection_Question_7/*
+!/[Cc]ollection_Question_7/src
+/[Cc]ollection_Question_8/*
+!/[Cc]ollection_Question_8/src
+/[Cc]ollection_Question_9/*
+!/[Cc]ollection_Question_9/src
+/[Cc]ollection_Question_10/*
+!/[Cc]ollection_Question_10/src
+
+
+
+
+
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
