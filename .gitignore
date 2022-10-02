@@ -32,19 +32,24 @@ Collection_Question_1/*
 Collection_Part3_Question1/*
 Collection_Part3_Question2/*
 ClassImplementations/*
-/[Cc]ollection_Question_5/*
-/Collection_Question_5/.settings/*
-!/[Cc]ollection_Question_5/src
-/[Cc]ollection_Question_6/*
-!/[Cc]ollection_Question_6/src
-/[Cc]ollection_Question_7/*
-!/[Cc]ollection_Question_7/src
-/[Cc]ollection_Question_8/*
-!/[Cc]ollection_Question_8/src
-/[Cc]ollection_Question_9/*
-!/[Cc]ollection_Question_9/src
-/[Cc]ollection_Question_10/*
-!/[Cc]ollection_Question_10/src
+Collection_Question_5/
+Collection_Question_5/*
+!Collection_Question_5/src
+Collection_Question_6/
+Collection_Question_6/*
+!Collection_Question_6/src
+Collection_Question_7/
+Collection_Question_7/*
+!Collection_Question_7/src
+Collection_Question_8/
+Collection_Question_8/*
+!Collection_Question_8/src
+Collection_Question_9/
+Collection_Question_9/*
+!Collection_Question_9/src
+Collection_Question_10/
+Collection_Question_10/*
+!Collection_Question_10/src
 
 
 
